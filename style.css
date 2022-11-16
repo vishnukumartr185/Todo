@@ -1,0 +1,179 @@
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+  }
+  input[type=text], select {
+      width: 25%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 6px;
+      box-sizing: border-box;
+  }
+  .btn {
+      width: 10%;
+      background-color: red;
+      color: white;
+      font-size: 17;
+      
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+  }    
+  table {
+      border-collapse: collapse;
+      width: 70%;
+      }
+
+  th ,td {
+  height: 50px;
+  font-size: 25;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+
+
+
+
+  ol {
+margin: 0;
+padding: 0;
+counter-reset: myCount;
+}
+
+/* Style the list items */
+ol li {
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 40px;
+list-style-type: none;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+counter-increment: myCount;
+font-style: oblique;
+
+/* make the list items unselectable */
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+ol li::before {
+content: counter(myCount);
+background: aquamarine;
+width: 2rem;
+height: 2rem;
+border-radius: 50%;
+display: inline-block;
+display: inline-block;
+margin-right: 0.5rem;
+line-height: 2rem;
+text-align: center;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+
+/* Darker background-color on hover */
+ol li:hover {
+background: #ddd;
+}
+
+li h2 {
+    
+    padding:3px;
+}
+
+li button {
+  float:right;
+  padding : 5px;
+  font-size: 14px;
+  line-height: 28px;
+  margin-right: 15px;
+  cursor: pointer;
+}    
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+  /*  background-color: red; */
+    width: 100%;
+}
+
+.todo-container{
+    margin: 5vh;
+    height: 65vh;
+    width: 80vh;
+    background-color: #FFEFEF;
+    border-radius: 2vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    background-color: transparent;
+    height: 10vh;
+    position: relative;
+    top: -2.5vh;
+    width: fit-content;
+  /*   background-color: red; */ 
+    justify-content: center;
+    
+}
+
+.header p{
+    font-size: 40px;    
+    font-weight: 600;
+}
+
+.completed-container{
+    margin: 5vh;
+    height: 65vh;
+    width: 80vh;
+    background-color:  #FFEFEF;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-list{
+    width: 79vh;
+    height: 49vh;
+    background-color: white; 
+    overflow-y: auto;
+    border-radius: 0 0 2vh 2vh;
+}
+
+.todo-list p{
+    padding: 3vh;
+}
+
+.completed-list{
+   
+    width: 79vh;
+    height: 49vh;
+    background-color: white; 
+    overflow-y: auto;
+    border-radius: 0 0 2vh 2vh;
+}
+
+html{
+    scrollbar-width: normal;
+}
+
+html::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: red;
+}

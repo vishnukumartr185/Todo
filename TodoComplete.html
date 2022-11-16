@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo & COMPLETED DISPLAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <h2 style="text-indent:50px;color: red; font-family: Arial, Helvetica, sans-serif; font-size: 32; padding: 25px; ">JUST DO IT</h2>
+    <hr style="color:red;">
+    <div id="myDiv">
+    <input type="text" placeholder="Heading" id="heading"></input>
+    <input type="text" placeholder="Description" id="Description"></input>
+    <span class="btn" onclick="addListItem()">Add Task</span>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div class="container">
+        <div class="todo-container">
+            <div class="header"><p>Todo</p></div>
+            <div class="todo-list">
+                <ol class="todo"></ol>
+            </div>
+        </div>
+        <div class="completed-container">
+            <div class="header"><p>Completed</p></div>
+            <div class="completed-list">
+                <ol class="com"></ol>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
